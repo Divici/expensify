@@ -1,8 +1,8 @@
-import React from 'react'
+import BudgetCard from "./components/BudgetCard"
 
 const App = () => {
   return (
-    <div className='h-screen bg-blue-drk text-txt-grey'>
+    <div className='h-screen bg-blue-drk text-txt-wht'>
       <div className='py-8 flex justify-around'>
         <h1 className='text-xl'>Expensify</h1>
         <div>
@@ -11,8 +11,10 @@ const App = () => {
         </div>
       </div>
 
-      <div className='grid grid-cols-[repeat_auto-fill_minmax(300px,_1fr)] gap-4 items-start'>
-
+      <div className='flex justify-center flex-wrap'>
+        <BudgetCard />
+        <BudgetCard />
+        <BudgetCard />
       </div>
       
     </div>
