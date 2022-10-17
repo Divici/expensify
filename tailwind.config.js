@@ -24,7 +24,11 @@ module.exports = withMT({
       'contrast': '#595968',
       'txt-grey': '#bababf',
     },
-    extend: {},
+    extend: {
+      colors: {
+        'blue-brt': '#5986f2',
+      }
+    },
   },
   plugins: [],
 })

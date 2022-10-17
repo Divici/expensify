@@ -15,12 +15,17 @@ const BudgetCard = () => {
             </div>
         </div>
         
-        <div className="h-4 ">
-            <Progress value={progressPercent} label={`${progressPercent < 10 ? '' : ' '}`} color={`${progressPercent > 70 ? 'red' : 'blue'}`} className="h-6 my-2 bg-txt-grey" />
+        <div className="mb-4">
+            <Progress value={progressPercent} label={`${progressPercent < 10 ? '' : ' '}`} color={`${progressPercent > 70 ? 'red' : 'light-blue'}`} className="h-6 bg-txt-grey" />
         </div>
          
-        <div className="tasks">
-
+        <div className="flex justify-between">
+            <button className="py-2 px-6 border-none outline-none cursor-pointer text-txt-wht bg-blue-brt hover:bg-txt-wht hover:text-blue-brt  transition ease-in-out duration-200 rounded-xl text-xs">
+                Add Expense
+            </button>
+            <button className="py-2 px-6 border-none outline-none cursor-pointer text-txt-wht bg-blue-brt hover:bg-txt-wht hover:text-blue-brt  transition ease-in-out duration-200 rounded-xl text-xs"> 
+                View Expenses
+            </button>
         </div>
     </div>
   )
